@@ -1,0 +1,20 @@
+class Customer:
+    def __init__(self,name):
+        self.name = name
+        self.orders = []
+
+    def order(self,item):
+        """add orders to the item"""
+        self.orders.append(item)
+        print(f"{self.name}  has this order")    
+        print (f"a {item} order" )
+
+
+
+ #call the function to work
+first_customer = Customer("ziibaby")
+first_customer.order('Chikecheese')
+
+
+       
+        
